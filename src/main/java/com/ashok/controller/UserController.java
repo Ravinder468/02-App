@@ -19,6 +19,9 @@ public class UserController {
 		
 		model.addAttribute("user", new User());
 		return "userForm";
+		
+		// HIS -200 related changes
+		public void doProcess(){logic goes here}
 	}
 
 	@RequestMapping(value = "/regUser.htm", method = RequestMethod.POST)
