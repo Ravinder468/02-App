@@ -10,6 +10,8 @@ import com.ashok.model.User;
 
 @Controller
 public class UserController {
+	
+	Private stastic final String Name = "Ravi";
 
 	@RequestMapping(value = "/displayForm.htm", method = RequestMethod.GET)
 	public String displayForm(Model model) {
