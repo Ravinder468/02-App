@@ -11,7 +11,12 @@ import com.ashok.model.User;
 @Controller
 public class UserController {
 	
+
+	Private stastic final String sn = "Ravinder";
+ 
+
 	Private stastic final String Name = "Ravi";
+
 
 	@RequestMapping(value = "/displayForm.htm", method = RequestMethod.GET)
 	public String displayForm(Model model) {
@@ -22,6 +27,8 @@ public class UserController {
 		model.addAttribute("user", new User());
 		return "userForm";
 	}
+	// his - 301 changes
+	public void m1(){ logic }
 
 	@RequestMapping(value = "/regUser.htm", method = RequestMethod.POST)
 	public String regUser(Model model, @ModelAttribute("user") User u) {
