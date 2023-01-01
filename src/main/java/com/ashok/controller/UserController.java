@@ -15,8 +15,13 @@ public class UserController {
 	public String displayForm(Model model) {
 		System.out.println("hi");
 		int i = 10;
+		int j = 10;
+		
 		model.addAttribute("user", new User());
 		return "userForm";
+		
+		// HIS -200 related changes
+		public void doProcess(){logic goes here}
 	}
 
 	@RequestMapping(value = "/regUser.htm", method = RequestMethod.POST)
